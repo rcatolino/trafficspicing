@@ -1,0 +1,11 @@
+[Unit]
+Description=Traffic spicing service
+
+[Service]
+ExecStart=/usr/local/bin/trafficspicing.py /usr/local/share/trafficspicing-domains
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=default.target
+
